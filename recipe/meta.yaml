@@ -18,6 +18,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
+    - make  # [linux]
   host:
     - python
     - xtensor-python >=0.26,<0.27
