@@ -20,7 +20,7 @@ requirements:
     - cmake
   host:
     - python
-    - xtensor-python >=0.25,<0.26
+    - xtensor-python >=0.26,<0.27
     - pip
     - setuptools
     - numpy
