@@ -11,16 +11,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv --ignore-installed --no-cache-dir
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
+    - make  # [linux]
   host:
     - python
-    - xtensor-python >=0.25,<0.26
+    - xtensor-python >=0.26,<0.27
     - pip
     - setuptools
     - numpy
