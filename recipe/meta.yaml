@@ -24,8 +24,8 @@ requirements:
     - make  # [linux]
   host:
     - python
-    - xtensor-python >=0.26,<0.27
-    - pybind11 >=2.0.1,<2.9
+    - xtensor-python ==0.26.0
+    - pybind11 >=2.0.1,<2.6
     - pip
     - setuptools
     - numpy
