@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps -vv --ignore-installed --no-cache-dir
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
   host:
     - python
     - xtensor-python >=0.26,<0.27
-    - pybind11
+    - pybind11 >=2.0.1,<2.9
     - pip
     - setuptools
     - numpy
