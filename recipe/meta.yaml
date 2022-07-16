@@ -25,7 +25,7 @@ requirements:
   host:
     - python
     - xtensor-python ==0.26.0
-    - pybind11 >=2.0.1,<2.6
+    - pybind11 >=2.0.1,<2.7
     - pip
     - setuptools
     - numpy
