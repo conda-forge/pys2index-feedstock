@@ -29,7 +29,7 @@ requirements:
     - pip
     - setuptools
     - numpy
-    - s2geometry >0.10.0
+    - s2geometry >=0.10.0
   run:
     - python
     - s2geometry
