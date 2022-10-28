@@ -36,8 +36,14 @@ requirements:
     - {{ pin_compatible('numpy') }}
 
 test:
+  source_files:
+    - tests
+  requires:
+    - pytest
   imports:
     - pys2index
+  commands:
+    - pytest
 
 about:
   home: https://github.com/benbovy/pys2index
