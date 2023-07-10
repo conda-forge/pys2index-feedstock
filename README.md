@@ -268,4 +268,5 @@ Feedstock Maintainers
 =====================
 
 * [@benbovy](https://github.com/benbovy/)
+* [@zklaus](https://github.com/zklaus/)
 
