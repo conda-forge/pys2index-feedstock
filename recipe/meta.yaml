@@ -33,7 +33,7 @@ requirements:
     - s2geometry >=0.10.0
   run:
     - python
-    - s2geometry
+    - {{ pin_compatible('s2geometry', max_pin='x.x') }}
     - {{ pin_compatible('numpy') }}
 
 test:
