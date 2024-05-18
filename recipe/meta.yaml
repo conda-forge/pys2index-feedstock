@@ -10,7 +10,7 @@ source:
   sha256: 8904a0c17490deb022fb3650118ea3e27208998521024b6512b613566253ccc3
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . --no-deps -vv --ignore-installed --no-cache-dir --no-build-isolation
 
@@ -21,6 +21,7 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - scikit-build-core                      # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [linux]
   host:
