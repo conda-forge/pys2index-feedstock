@@ -14,8 +14,6 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.10.* *_cpython
-s2geometry:
-- 0.11.1
 target_platform:
 - win-64
 zip_keys:
