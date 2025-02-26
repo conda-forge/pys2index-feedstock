@@ -12,7 +12,7 @@ source:
     - 0001-fix-cmake.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . --no-deps -vv --ignore-installed --no-cache-dir --no-build-isolation
 
