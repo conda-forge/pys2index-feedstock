@@ -23,7 +23,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - cmake
-    - make  # [linux]
+    - make  # [unix]
   host:
     - python
     - xtensor-python >=0.26
