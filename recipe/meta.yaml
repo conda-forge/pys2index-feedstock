@@ -12,8 +12,7 @@ source:
     - 0001-fix-cmake.patch
 
 build:
-  number: 3
-  skip: true  # [py<39]
+  number: 4
   script: {{ PYTHON }} -m pip install . --no-deps -vv --ignore-installed --no-cache-dir --no-build-isolation
 
 requirements:
@@ -33,11 +32,10 @@ requirements:
     - pip
     - scikit-build-core
     - numpy
-    - s2geometry >=0.10.0
     - libabseil  # [not linux]
+    - s2geometry
   run:
     - python
-    - {{ pin_compatible('s2geometry', max_pin='x.x') }}
 
 test:
   source_files:
