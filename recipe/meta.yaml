@@ -34,6 +34,7 @@ requirements:
     - scikit-build-core
     - numpy
     - s2geometry >=0.10.0
+    - libabseil  # [not linux]
   run:
     - python
     - {{ pin_compatible('s2geometry', max_pin='x.x') }}
