@@ -27,7 +27,11 @@ requirements:
     - make  # [unix]
   host:
     - python
-    - xtensor-python >=0.26
+    # In xtensor 0.26, all the header files were moved to new locations.
+    # This corresponds to xtensor-python 0.28 and requires upstream changes.
+    # As upstream is not being developed actively anymore, that is not likely
+    # to happen, though the changes are fairly small, making a patch feasible.
+    - xtensor-python >=0.26,<0.28a0
     - pybind11
     - pip
     - scikit-build-core
