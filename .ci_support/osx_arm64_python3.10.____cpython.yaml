@@ -27,6 +27,6 @@ pin_run_as_build:
 python:
 - 3.10.* *_cpython
 s2geometry:
-- 0.11.1
+- '0.14'
 target_platform:
 - osx-arm64
